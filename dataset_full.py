@@ -193,7 +193,7 @@ class HandICLDataset(Dataset):
         m2a = self.process_mano(m2a)
         m2b = self.process_mano(m2b)
         
-        text_instruction_path = '/home/shiqiu/binzhu/Point-In-Context/hand_model/hamer/handicl/fulldata/text_instruction.json'
+        text_instruction_path = ''
         with open(text_instruction_path, 'r') as f:
             text_instruction = json.load(f)
 

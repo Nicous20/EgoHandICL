@@ -15,7 +15,6 @@ from handicl.egohandicl_new import HandICL
 
 
 def mirror_right_to_left_mano(right_mano_dict: dict) -> dict:
-    """把右手 MANO rotmat 镜像成左手"""
     def mirror_rotmat_np(rotmat: np.ndarray) -> np.ndarray:
         M = np.diag([-1.0, 1.0, 1.0]) 
         return M @ rotmat @ M.T

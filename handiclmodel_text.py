@@ -343,7 +343,7 @@ args, _ = parse_args([
     "--num-group", "512",
 ])
 model = models.create_uni3d(args)
-ckpt = torch.load("/home/shiqiu/binzhu/Point-In-Context/hand_model/hamer/handicl/model/Uni3D/checkpoints/model.pt", map_location="cpu")
+ckpt = torch.load("", map_location="cpu")
 sd = ckpt["module"] if "module" in ckpt else ckpt["state_dict"]
 model.load_state_dict(sd, strict=False)
 model = model.eval().cuda()
@@ -415,20 +415,7 @@ def mano_loss(pred, target):
         if total_mpvpe is None:
             total_mpvpe = mpvpe
         else:
-            total_mpvpe = total_mpvpe + mpvpe  # out-of-place
-        
-        #     mpjpe = torch_mpjpe(pred_mano_output['pred_keypoints_3d'], target_mano_output['pred_keypoints_3d'])
-        #     pmpjpe = torch_p_mpjpe(pred_mano_output['pred_keypoints_3d'], target_mano_output['pred_keypoints_3d'])
-        #     if total_mpjpe_loss is None:
-        #         total_mpjpe_loss = mpjpe
-        #     else:
-        #         total_mpjpe_loss = total_mpjpe_loss + mpjpe  # out-of-place
-        #     if total_pmpjpe_loss is None:
-        #         total_pmpjpe_loss = pmpjpe
-        #     else:
-        #         total_pmpjpe_loss = total_pmpjpe_loss + pmpjpe  # out-of-place
-        # total_mpjpe_loss = total_mpjpe_loss / batch_size
-        # total_pmpjpe_loss = total_pmpjpe_loss / batch_size
+            total_mpvpe = total_mpvpe + mpvpe  
         
 
         # -------- 3d embedding loss -------- #
