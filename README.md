@@ -1,8 +1,14 @@
-# EgoHandICL: Egocentric 3D Hand Reconstruction via In-Context Learning
+# EgoHandICL: Egocentric 3D Hand Reconstruction via In-Context Learning [![arXiv](https://img.shields.io/badge/arXiv-2601.19850-b31b1b.svg)](https://arxiv.org/abs/2601.19850) [![Hugging Face](https://img.shields.io/badge/HuggingFace-Dataset%20%26%20Model-yellow)](https://huggingface.co/datasets/Nicous/EgoHandICL/tree/main)
 
-[![arXiv](https://img.shields.io/badge/arXiv-2601.19850-b31b1b.svg)](https://arxiv.org/abs/2601.19850)
-[![Hugging Face](https://img.shields.io/badge/HuggingFace-Dataset%20%26%20Model-yellow)](https://huggingface.co/datasets/Nicous/EgoHandICL/tree/main)
+**Authors:** Binzhu Xie<sup>1,2</sup><sup>\*</sup>, Shi Qiu<sup>1,2</sup><sup>*</sup><sup>†</sup>, Sicheng Zhang<sup>3</sup>, Yinqiao Wang<sup>1,2</sup>, Hao Xu<sup>1,2</sup>, Muzammal Naseer<sup>3</sup>, Chi-Wing Fu<sup>1,2</sup>, Pheng-Ann Heng<sup>1,2</sup>  
+<sup>1</sup> Department of Computer Science and Engineering, The Chinese University of Hong Kong  
+<sup>2</sup> Institute of Medical Intelligence and XR, The Chinese University of Hong Kong  
+<sup>3</sup> Department of Computer Science, Khalifa University  
 
+> <sup>*</sup>: Equal contribution.  
+> <sup>†</sup>: Corresponding author.
+
+---
 Official implementation of **EgoHandICL** (ICLR 2026).
 
 ## Table of Contents
